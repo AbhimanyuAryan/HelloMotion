@@ -1,10 +1,9 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    @alert =
-			UIAlertView.alloc.initWithTitle("Hello", message: "Hello, RubyMotion", delegate: nil, cancelButtonTitle: "OK",otherButtonTitles: nil)
-		@alert.show
+    @alert = UIAlertView.alloc.initWithTitle("Exit", message: "Do you really want to exit?", delegate: nil, cancelButtonTitle: "OK", otherButtonTitles: nil)
+    @alert.show
 
-		puts "Hello from the console!"
+    puts "Alert box shown"
     true
   end
 end
